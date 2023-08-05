@@ -1,0 +1,35 @@
+.header {
+  text-align: center;
+}
+
+.header > h1 {
+  font-size: 3vh;
+}
+.header > h2 {
+  font-size: 3vh;
+}
+.header > h3 {
+  font-size: 2vh;
+}
+
+.btn {
+  background-color: #fa962c;
+  border-color: #fa962c;
+}
+.btn:hover {
+  background-color: #f29727;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 768px;
+  }
+}
+
+/* Custom CSS for medium-sized screens */
+@media (min-width: 769px) and (max-width: 990px) {
+  .custom-container {
+    max-width: 990px;
+  }
+}
