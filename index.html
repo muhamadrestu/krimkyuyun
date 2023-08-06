@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,tial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
     <link rel="stylesheet" href="index.css" />
     <title>Gantari</title>
@@ -23,7 +23,9 @@
               <p class="fw-bold fs-6">PRJ kety light mampu untuk mencerahkan ketiak,lipatan paha,siku dan lipatan lainnya. Gunakan 2-3 kali sehari setelah mandi untuk hasil maksimal</p>
               <p class="fw-bold fs-6">Isi 10 ml</p>
               <p class="fw-bold fs-2 text-danger">Pesan sekarang melalui link whatsapp dibawah ini</p>
-              <a href="https://wa.me/message/BW4CYKKCJNGDP1"><img src="images/wa.png" class="w-25 h-25" /></a>
+              <a href="https://wa.me/message/BW4CYKKCJNGDP1" onclick="trackButtonClick('PRJ_KETY_LIGHT_CREAM')">
+                <img src="images/wa.png" class="w-25 h-25" />
+              </a>
             </div>
           </div>
         </div>
@@ -38,7 +40,9 @@
               </p>
               <p class="fw-bold fs-6">Isi 300 ml</p>
               <p class="fw-bold fs-2 text-danger">Pesan sekarang melalui link whatsapp dibawah ini</p>
-              <a href="https://wa.me/message/BW4CYKKCJNGDP1"><img src="images/wa.png" class="w-25 h-25" /></a>
+              <a href="https://wa.me/message/BW4CYKKCJNGDP1" onclick="trackButtonClick('PRJ_BODY_SERUM')">
+                <img src="images/wa.png" class="w-25 h-25" />
+              </a>
             </div>
           </div>
         </div>
@@ -64,10 +68,15 @@
       })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
       fbq("init", "789603329563593");
       fbq("track", "PageView");
+
+      // Function to track button click events
+      function trackButtonClick(productName) {
+        fbq("track", "Contact", { content_name: productName });
+      }
     </script>
-    <noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=789603329563593&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
-    <noscript><img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=789603329563593&ev=PageView&noscript=1" /></noscript>
+    <noscript>
+      <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=789603329563593&ev=PageView&noscript=1" />
+    </noscript>
     <!-- End Meta Pixel Code -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
